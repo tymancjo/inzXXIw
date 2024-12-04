@@ -39,7 +39,7 @@ def main():
         T_prev = T0
         dt = t_max / n      
 
-        for tx in range(n):
+        for _ in range(n):
             T_prev = T_prev+(R0*(1+alfa*(T_prev-20))*I*I*dt)/(mcp)
 
         d = abs((T_prev - T_max)/T_prev)
