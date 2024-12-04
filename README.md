@@ -118,27 +118,32 @@ $$
 wiemy, że pojawią się straty mocy, które z kolei będą nasz przewodnik nagrzewać. Znając materiał i mase naszego przewodnika oraz czas takiego nagrzewania możemy:
 
 Określić energię jaką dostarczymy, do objętości materiału, która przy stałej wartości strat mocy:
+
 $$
 \Delta P = R\cdot I^{2}  [W]
 $$
 
 Będzie wynosić:
+
 $$
 Q = \Delta P \cdot \tau [J]
 $$
 
 a to z kolei pozwoli nam obliczyć przyrost temperatury naszego przewodnika przekształcając równanie definicyjne ciepła właściwego do postaci:
+
 $$
 \Delta T = \frac{Q}{m \cdot c_{p}} [K]
 $$
 
 W powyższym rozumowaniu kryje się jednak pewna pułapka, która jeżeli ją przeoczymy to nasze wyniki będą po prostu niepoprawne. 
 Tym detalem o którym nie możemy zapominać jest fakt, że rezystancja przewodnika jest zależna od temperatury. 
+
 $$
 R(t) = R_{20}(1+\alpha(t-20^{o}C)) [\Omega]
 $$
 
 Co jeżeli zbierzemy to razem do jednego sensownego równania:
+
 $$
 t(\tau)-t_0 = \frac{R_{20}(1+\alpha(t(\tau)-20^{o}C))\cdot I^2 \cdot \tau}{m \cdot c_p}
 $$
