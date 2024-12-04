@@ -14,7 +14,7 @@ _Nie jestem programistą, informatykiem czy specjalistą w żadnej pokrewnej dzi
 
 Jestem inżynierem elektrykiem zajmującym się zawodowo zagadnieniami związanymi z przemysłowymi rozdzielnicami elektrycznymi niskiego napięcia. Ich projektowaniem, badaniami i rozwojem. 
 
-![Slide5.JPG](doc_img\Slide5.JPG)
+![Slide5.JPG](doc_img/Slide5.JPG)
 
 W zwiazku z powyższym, przedstawione dalej informacje i podejście nie koniecznie jest zgodne z kanonem realizacji zagadnień związanych z programowaniem jaki przyjęty jest właśnie we wspomnianych dziedzinach ogólnie pojętej _informatyki_.
 
@@ -28,13 +28,13 @@ O tym, że codzienna praca inżyniera związana jest z ciągłym podejmowaniem t
 Spotkałem się też gdzieś z cytatem, że 
 > Praca inżyniera różni się od pracy naukowca tym, że naukowcy odpowiadają na pytanie __dlaczego__ tak się dzieje, a inżynierowie na pytanie __jak__ to zrobić.
 
-![Slide7](doc_img\Slide7.JPG)
+![Slide7](doc_img/Slide7.JPG)
 
 Moja zaś teza, którą stawiam po tych już prawie 20 latach zawodowych doświadczeń, jest taka iż - warto wybierając odpowiedź na pytanie "jak?" wiedzieć "dlaczego" właśnie ją wybieramy. 
 
 ## Inżynierskie odpowiadanie na pytanie dlaczego
 
-![Slide8](doc_img\Slide8.JPG)
+![Slide8](doc_img/Slide8.JPG)
 
 Zatem dobra odpowiedź na wspomniane pytanie _jak_ niejako narzuca nam swoistą konieczność uzasadnienia tejże. Nasze inżynierskie decyzje winny byc podejmowane świadomie w oparciu o najlepsze zrozumienie zjawisk fizycznych z jakimi opracowywane rozwiązanie musi się zmierzyć.
 
@@ -71,7 +71,7 @@ Innymi słowy...
 
 To taka komiksowa maksyma wujka Bena. Ale ma tu na tyle zastosowanie, że korzystając z tak wyszukanych systemów - trzeba wiedzieć co się robi. Albo przynajmniej wiedzieć czego się spodziewać jako wyniku - jeszcze przed rozpoczęciem analiz. 
 
-![Slide10](doc_img\Slide10.JPG)
+![Slide10](doc_img/Slide10.JPG)
 
 Pomocną dla mnie w zapewnieniu takiego podejścia okazała się opracowana już dość dawno temu w ramach mojego zajmowania się w dziale R&D promowaniem świadomego i opartego na obliczeniach i analizach projektowania - metodyka _kolejnych przybliżeń_. 
 
@@ -103,7 +103,7 @@ Niewykluczone, że już to zrobiliśmy – czasem nawet nieświadomie!
 
 Starczy już nam może tych dywagacji. Spójrzmy zatem na przykład z życia wzięty. 
 
-![Slide13](doc_img\Slide13.JPG)
+![Slide13](doc_img/Slide13.JPG)
 
 Przeprowadźmy takie rozważania w dziedzinie elektryczno-termicznej. Rozważania mające na calu odpowiedź na pytanie - jak zmieni się temperatura przewodnika o znanym materiale i rozmiarze ($\sigma, \alpha, a,b,l, c_{p}, \rho$) gdy przepuścimy przezeń prąd elektryczny o znanym natężeniu $I$ przez znany czas $\tau$.
 
@@ -166,13 +166,13 @@ I ten jakże miły dla oka wzór, który uzyskać można w tak elegancki matemat
 Jenak, skoro to nasze rozważanie ze względu na swój charakter musiało przybrać formę różniczkową, to można by też do niego podejść iteracyjnie. Czyli nie tyle różniczkowo co różnicowo.
 
 
-![Slide14](doc_img\Slide14.JPG)
+![Slide14](doc_img/Slide14.JPG)
 Rozwiązując równanie w pierwotnej formie wielokrotnie, w każdym powtórzeniu przeliczając wartości rezystancji i strat mocy na podstawie temperatury obliczonej w poprzednim kroku. 
 
 Możemy to zrealizować na przykład w arkuszu kalkulacyjnym, a przy okazji porównać wyniki uzyskiwane za pomocą takiej krokowej metody przybliżonej do tych pochodzących z naszego, wyprowadzonego matematycznie wzoru. 
 
 
-![Slide15](doc_img\Slide15.JPG)
+![Slide15](doc_img/Slide15.JPG)
 
 Jak można zobaczyć, otrzymywane wyniki są bardzo zbliżone, acz nie dokładnie takie same. Dlaczego zatem użycie podejścia krokowego _iteracyjnego_ może mieć jakieś zalety? 
 
@@ -183,7 +183,7 @@ Zaś nasz model _iteracyjny_ niejako ze swojej natury jest pewnym rodzajem symul
 Na przykład postulując zmienną wartość wspomnianego natężenia prądu, możemy bez praktycznie żadnych modyfikacji naszego arkusza uzyskać odpowiedź termiczną analizowanego przewodnika.
 
 
-![Slide16](doc_img\Slide16.JPG)
+![Slide16](doc_img/Slide16.JPG)
 
 ## Ale gdzie tu jest programowanie?
 
@@ -193,7 +193,7 @@ Ale czy aby na pewno?!?
 Na tą implementację w arkuszu kalkulacyjnym można też popatrzeć nieco inaczej:
 
 
-![Slide17](doc_img\Slide17.JPG)
+![Slide17](doc_img/Slide17.JPG)
 
 I dostrzegamy wtedy, że mamy tutaj zaskakujaco wiele podstawowych idei i mechanizmów znanych własnie z programowania:
 
@@ -205,14 +205,14 @@ I dostrzegamy wtedy, że mamy tutaj zaskakujaco wiele podstawowych idei i mechan
 
 Innymi słowy
 __Właściwie to już napisaliśmy program!__
-![Slide18](doc_img\Slide18.JPG)
+![Slide18](doc_img/Slide18.JPG)
 
 ## Python - żeby to programowanie było nieco bardziej _na serio_
 
 Gdyby jednak chcieć porzucić pewne ograniczenia jakie narzuca arkusz kalkulacyjny jako środowisko pracy, albo po prostu zaprogramować nasze rozwiązanie nieco bardziej _jak programista_. To bardzo dobrym pierwszym wyborem będzie użycie języka programowania jakim jest __Python__.
 
 
-![Slide20](doc_img\Slide20.JPG)
+![Slide20](doc_img/Slide20.JPG)
 
 Implementując taką zamą metodę jak ta powyżej, ale już właśnie w pythonie:
 
@@ -260,7 +260,7 @@ plt.show()
 W wyniku działania którego dostajemy wyniki tożsame ilościowo z tymi z arkusza kalkulacyjnego.
 
 
-![Slide21](doc_img\Slide21.JPG)
+![Slide21](doc_img/Slide21.JPG)
 
 Dzięki temu, że teraz mamy nasz program czy _skrypt_ właśnie w takiej formie, możemy bardzo łatwo zrealizować kilka ciekawych modyfikacji. 
 
@@ -277,7 +277,7 @@ Jeszcze jedną pętlą, która będzie zmieniać ilość wykonywanych kroków it
 
 __zmodyfikowany kod jest dostępny w pliku ```przyklad01.py```__
 
-![Slide22](doc_img\Slide22.JPG)
+![Slide22](doc_img/Slide22.JPG)
 
 Wykonanie tego skryptu, pokazuje nam, że wartość wyniku zalezy od ilości kroków iteracji, jednak wraz z jej wzrostem staje się __zbieżna__ do pewnej wartości, albo innymi słowy __stabilizuje się__. 
 To z kolei sugeruje, że nie ma sensu przesadzać z ilością kroków iteracji, gdyz wydłuża to tylko działanie naszego kodu, a nie przynosi już szczególnych korzyści. 
@@ -288,7 +288,7 @@ Można się nawet pokusić o zautomatyzowanie dobierania potrzebnej ilości krok
 Implementację takiego mechanizmu umieściłem w pliku ```przyklad03.py```.
 
 
-![Slide23](doc_img\Slide23.JPG)
+![Slide23](doc_img/Slide23.JPG)
 
 I tak właśnie zaczynając od równania i arkusza kalkulacyjnego, zbudowaliśmy już całkiem ładnie zachowujacy się __program__, który stanowi już prawie gotową małą aplikację. 
 
@@ -298,7 +298,7 @@ To ostatnie możemy zrealizować za pomoca pobierania parametrów analizy z lini
 Całą implementację można znaleźć w pliku ```aplikacja.py``` a jej działanie jest następujące:
 
 
-![Slide24](doc_img\Slide24.JPG)
+![Slide24](doc_img/Slide24.JPG)
 
 ### I tym sposobem stworzyliśmy nasza aplikację!
 
@@ -308,22 +308,22 @@ Całą implementację można znaleźć w pliku ```aplikacja.py``` a jej działan
 ### Przykłady aplikacji jakie miałem okazję stworzyć w tym środowisku na potrzeby moich zadań inzynierskich
 
 
-![Slide28](doc_img\Slide28.JPG)
+![Slide28](doc_img/Slide28.JPG)
 
-![Slide29](doc_img\Slide29.JPG)
+![Slide29](doc_img/Slide29.JPG)
 
-![Slide30](doc_img\Slide30.JPG)
+![Slide30](doc_img/Slide30.JPG)
 
-![Slide31](doc_img\Slide31.JPG)
+![Slide31](doc_img/Slide31.JPG)
 
 ### Kilka słów ostrzeżenia przed skutkami ubocznymi
 
 
-![Slide33](doc_img\Slide33.JPG)
+![Slide33](doc_img/Slide33.JPG)
 
-![Slide34](doc_img\Slide34.JPG)
+![Slide34](doc_img/Slide34.JPG)
 
-![Slide35](doc_img\Slide35.JPG)
+![Slide35](doc_img/Slide35.JPG)
 
 
 # Podsumowując
